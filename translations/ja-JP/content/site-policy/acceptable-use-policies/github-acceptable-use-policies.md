@@ -81,14 +81,14 @@ We do not allow content or activity on GitHub that:
 
 スクレイピングとは、ボットやウェブクローラーなどの自動的な処理により、当社「サービス」から情報を抽出することを指します。 スクレイピングは、API を介した情報の収集を指すものではありません。 当社「API 利用規約」については、[「利用規約」](/articles/github-terms-of-service#h-api-terms)のセクション H を参照してください。
 
-(「[GitHub のプライバシーについての声明](/github/site-policy/github-privacy-statement)」の定義による) 「ユーザ個人情報」を、ユーザに対して未承諾メールを送信する、人事採用担当者、ヘッドハンター、求人掲示板などに販売するといった目的を含め、スパム目的で本「サービス」から取得 (スクレイピング、APIを介した情報収集、その他の手段による取得) した情報を利用することはできません。
+You may not use information from the Service (whether scraped, collected through our API, or obtained otherwise) for spamming purposes, including for the purposes of sending unsolicited emails to users or selling personal information, such as to recruiters, headhunters, and job boards.
 
 本「サービス」から収集したデータの利用はすべて、「 [GitHub のプライバシーについての声明](/github/site-policy/github-privacy-statement)」に従う必要があります。
 
 ## 8. プライバシー
-「ユーザ個人情報」の悪用は禁じられています
+Misuse of personal information is prohibited.
 
-本「サービス」からデータを収集するあらゆる個人、法人、またはサービスは、特に「ユーザ個人情報」の収集に関して、「[GitHub のプライバシーについての声明](/articles/github-privacy-statement)」に従う必要があります。 「サービス」から何らかの「ユーザ個人情報」を収集する場合、あなたは「ユーザ」が承認した目的においてのみ「ユーザ個人情報」を利用することに同意するものとします。 あなたは、「サービス」から収集した、あらゆる「ユーザ個人情報」を合理的に保護することに同意するものとし、当社やその他ユーザからの苦情、削除要請、および連絡拒否の要請に速やかに対応するものとします。
+Any person, entity, or service collecting data from the Service must comply with the [GitHub Privacy Statement](/articles/github-privacy-statement), particularly in regards to the collection of personal information. If you collect any personal information from the Service, you agree that you will only use that personal information for the purpose for which that User has authorized it. You agree that you will reasonably secure any personal information you have gathered from the Service, and you will respond promptly to complaints, removal requests, and "do not contact" requests from us or other users.
 
 ## 9. 過剰な帯域の使用
 「サービス」の帯域制限は、利用する機能によって異なります。 帯域の利用が、同類の機能の他のユーザと比較して過剰であると当社が判断した場合、帯域の消費を抑えられるまで、当社はお客様の「アカウント」を停止したり、ファイルのホスティングを抑制したりするなどしてアクティビティを制限する権利を留保します。 また当社は、当社インフラストラクチャに過度の負荷をかけていると判断するリポジトリを、事前通知を行った後に削除する権利を留保します。 リポジトリのオブジェクトストレージに関する利用規定については、「[私のディスク容量はいくつですか？](/github/managing-large-files/what-is-my-disk-quota)」を参照してください。 特定機能の帯域制限に関する詳しい情報については、「[GitHub 追加製品の利用規約](/github/site-policy/github-additional-product-terms)」を参照してください。
@@ -98,7 +98,7 @@ We do not allow content or activity on GitHub that:
 
 当社は、お客様が支持者の名前またはロゴをアカウントに掲載することによって自身の「コンテンツ」のプロモーションを行いたい場合があることを理解していますが、「アカウント」内あるいは「アカウント」を通して「サービス」へと投稿される「コンテンツ」の主な目的が広告またはプロモーション活動であってはなりません。 これには、「ページ」、「パッケージ」、リポジトリ、および「サービス」のその他一切の部分内か、またはこれを通じて投稿される「コンテンツ」が含まれます。 お客様の「アカウント」に関連する README ドキュメントまたはプロジェクト説明セクションに、静止画像、リンク、広告文を記載することはできますが、それは GitHub でホスティングしているプロジェクトに関連するものでなければなりません。 収益目的または過度に大きいコンテンツを Issue に投稿するなど、他の「ユーザ」の「アカウント」で広告を行うことはできません。
 
-You may not promote or distribute content or activity that is illegal or otherwise prohibited by our [Terms of Service](/github/site-policy/github-terms-of-service/)or [Acceptable Use Policies](/github/site-policy/github-acceptable-use-policies/), including excessive automated bulk activity (for example, spamming), get-rich-quick schemes, and misrepresentation or deception related to your promotion.
+You may not promote or distribute content or activity that is illegal or otherwise prohibited by our [Terms of Service](/github/site-policy/github-terms-of-service/) or [Acceptable Use Policies](/github/site-policy/github-acceptable-use-policies/), including excessive automated bulk activity (for example, spamming), get-rich-quick schemes, and misrepresentation or deception related to your promotion.
 
 「アカウント」に何らかの宣伝材料を投稿することを決めた場合、お客様はすべての適用される法令に従う責任を負うものとします。 この法令には、「推奨・証言に関する米国連邦取引委員会のガイドライン」が含まれますが、それに限定されません。 当社は、GitHub の何らかの規約またはポリシーに違反すると当社が独自に裁量した、一切の宣伝材料または広告を削除する権利を留保します。
 
@@ -109,4 +109,6 @@ We will interpret our policies and resolve disputes in favor of protecting users
 
 ---
 
-GitHub retains full discretion to [take action](/github/site-policy/github-community-guidelines#what-happens-if-someone-violates-githubs-policies) in response to a violation of these policies, including account suspension, account [termination](/github/site-policy/github-terms-of-service#3-github-may-terminate), or [removal](/github/site-policy/github-terms-of-service#2-github-may-remove-content) of content.
+**Enforcement.** GitHub retains full discretion to [take action](/github/site-policy/github-community-guidelines#what-happens-if-someone-violates-githubs-policies) in response to a violation of these policies, including account suspension, account [termination](/github/site-policy/github-terms-of-service#3-github-may-terminate), or [removal](/github/site-policy/github-terms-of-service#2-github-may-remove-content) of content. Please also see our [Community Guidelines](/site-policy/github-terms/github-community-guidelines) for actions you can take if something or someone offends you.
+
+**Reinstatement and appeal.** If your content or account has been disabled or restricted and you seek reinstatement or wish to appeal, please see our [Appeal and Reinstatement page](/site-policy/acceptable-use-policies/github-appeal-and-reinstatement) for information about the process and use our [Appeal and Reinstatement form](https://support.github.com/contact/reinstatement) to submit a request.

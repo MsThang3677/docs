@@ -1,5 +1,5 @@
 ---
-title: About Dependabot alerts
+title: Sobre alertas do Dependabot
 intro: 'O {% data variables.product.product_name %} envia {% data variables.product.prodname_dependabot_alerts %} quando detectamos vulnerabilidades que afetam o seu repositório.'
 redirect_from:
   - /articles/about-security-alerts-for-vulnerable-dependencies
@@ -10,7 +10,7 @@ redirect_from:
 versions:
   fpt: '*'
   ghes: '*'
-  ghae: issue-4864
+  ghae: '*'
   ghec: '*'
 type: overview
 topics:
@@ -62,7 +62,7 @@ Para obter uma lista dos ecossistemas para os quais o {% data variables.product.
 
 {% ifversion fpt or ghec %}{% data variables.product.prodname_dotcom %} detecta dependências vulneráveis em repositórios _públicos_ e exibe o gráfico de dependências, mas não gera {% data variables.product.prodname_dependabot_alerts %} por padrão. Proprietários de repositórios ou pessoas com acesso de administrador podem habilitar {% data variables.product.prodname_dependabot_alerts %} para repositórios públicos. Os proprietários de repositórios privados ou pessoas com acesso de administrador, podem habilitar o {% data variables.product.prodname_dependabot_alerts %} ativando o gráfico de dependências e {% data variables.product.prodname_dependabot_alerts %} para seus repositórios.
 
-Você também pode habilitar ou desabilitar {% data variables.product.prodname_dependabot_alerts %} para todos os repositórios pertencentes à sua conta de usuário ou organização. Para mais informações consulte "[Gerenciar as configurações de segurança e análise da sua conta de usuário](/github/setting-up-and-managing-your-github-user-account/managing-security-and-analysis-settings-for-your-user-account)" ou "[Gerenciar as configurações de segurança e análise da sua organização](/organizations/keeping-your-organization-secure/managing-security-and-analysis-settings-for-your-organization)".
+Você também pode habilitar ou desabilitar {% data variables.product.prodname_dependabot_alerts %} para todos os repositórios pertencentes à sua conta de usuário ou organização. Para obter mais informações, consulte "[Configurando {% data variables.product.prodname_dependabot_alerts %}](/code-security/dependabot/dependabot-alerts/configuring-dependabot-alerts)."
 
 Para obter informações sobre os requisitos de acesso para ações relacionadas a {% data variables.product.prodname_dependabot_alerts %}, consulte "[Funções do repositório para uma organização](/organizations/managing-access-to-your-organizations-repositories/repository-roles-for-an-organization#access-requirements-for-security-features)".
 
@@ -83,7 +83,7 @@ Para repositórios em que {% data variables.product.prodname_dependabot_security
 
 ## Acesso a {% data variables.product.prodname_dependabot_alerts %}
 
-É possível ver todos os alertas que afetam um determinado projeto{% ifversion fpt or ghec %} na aba Segurança do repositório ou{% endif %} no gráfico de dependências do repositório. For more information, see "[Viewing {% data variables.product.prodname_dependabot_alerts %} for vulnerable dependencies](/github/managing-security-vulnerabilities/viewing-and-updating-vulnerable-dependencies-in-your-repository)."
+É possível ver todos os alertas que afetam um determinado projeto{% ifversion fpt or ghec %} na aba Segurança do repositório ou{% endif %} no gráfico de dependências do repositório. Para obter mais informações, consulte "[Visualizando {% data variables.product.prodname_dependabot_alerts %} para dependências vulneráveis](/github/managing-security-vulnerabilities/viewing-and-updating-vulnerable-dependencies-in-your-repository)."
 
 Por padrão, notificamos as pessoas com permissões de administrador nos repositórios afetados sobre os novos {% data variables.product.prodname_dependabot_alerts %}. {% ifversion fpt or ghec %}{% data variables.product.product_name %} nunca divulga publicamente vulnerabilidades identificadas para qualquer repositório. Você também pode tornar o {% data variables.product.prodname_dependabot_alerts %} visível para pessoas ou repositórios de trabalho de equipes adicionais que você possui ou para os quais tem permissões de administrador. Para obter mais informações, consulte "[Gerenciar configurações de segurança e análise do repositório](/github/administering-a-repository/managing-security-and-analysis-settings-for-your-repository#granting-access-to-security-alerts)".
 {% endif %}
@@ -97,5 +97,5 @@ Você também pode ver todos os {% data variables.product.prodname_dependabot_al
 ## Leia mais
 
 - "[Sobre {% data variables.product.prodname_dependabot_security_updates %}](/github/managing-security-vulnerabilities/about-dependabot-security-updates)"
-- "[Viewing {% data variables.product.prodname_dependabot_alerts %} for vulnerable dependencies](/articles/viewing-and-updating-vulnerable-dependencies-in-your-repository)"{% endif %}
+- "[Visualizando {% data variables.product.prodname_dependabot_alerts %} para dependências vulneráveis](/articles/viewing-and-updating-vulnerable-dependencies-in-your-repository)"{% endif %}
 {% ifversion fpt or ghec %}- "[Privacidade em {% data variables.product.prodname_dotcom %}](/get-started/privacy-on-github)"{% endif %}

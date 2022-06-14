@@ -31,13 +31,15 @@ Ações são frequentemente atualizadas com correções de bugs e novos recursos
 
 ## Habilitando {% data variables.product.prodname_dependabot_version_updates %} para ações
 
-{% data reusables.dependabot.create-dependabot-yml %} Se você já habilitou o {% data variables.product.prodname_dependabot_version_updates %} para outros ecossistemas ou gerenciadores de pacotes, basta abrir o arquivo existente *dependabot.yml*.
+Você pode configurar {% data variables.product.prodname_dependabot_version_updates %} para manter suas ações, bem como as bibliotecas e pacotes dos quais você depende.
+
+1. Se você já habilitou {% data variables.product.prodname_dependabot_version_updates %} para outros ecossistemas ou gerentes de pacotes, basta abrir o arquivo *dependabot.yml* existente. Caso contrário, crie um arquivo de configuração *dependabot.yml* no diretório `.github` do seu repositório. Para obter mais informações, consulte "[Configurando as atualizações da versão do Dependabot](/code-security/dependabot/dependabot-version-updates/configuring-dependabot-version-updates#enabling-dependabot-version-updates)".
 1. Especifique `"github-actions"` como um `package-ecosystem` para monitorar.
 1. Defina o `directory` como `"/"` para verificar os arquivos de fluxo de trabalho em `.github/workflows`.
 1. Defina um `schedule.interval` para especificar quantas vezes procurar por novas versões.
 {% data reusables.dependabot.check-in-dependabot-yml %} Se você tiver editado um arquivo existente, salve suas alterações.
 
-Você também pode habilitar o {% data variables.product.prodname_dependabot_version_updates %} em bifurcações. For more information, see "[Configuring {% data variables.product.prodname_dependabot %} version updates](/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/enabling-and-disabling-dependabot-version-updates#enabling-version-updates-on-forks)."
+Você também pode habilitar o {% data variables.product.prodname_dependabot_version_updates %} em bifurcações. Para obter mais informações, consulte "[Configurando as atualizações da versão de {% data variables.product.prodname_dependabot %}](/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/enabling-and-disabling-dependabot-version-updates#enabling-version-updates-on-forks)".
 
 ### Exemplo de arquivo *dependabot.yml* para {% data variables.product.prodname_actions %}
 
@@ -58,7 +60,7 @@ updates:
 
 ## Configurando o {% data variables.product.prodname_dependabot_version_updates %} para ações
 
-Ao habilitar {% data variables.product.prodname_dependabot_version_updates %} para ações, você deve especificar valores para `package-ecosystem`, `directory` e `schedule.interval`. Há muitas propriedades opcionais adicionais que você pode definir para personalizar ainda mais suas atualizações de versão. For more information, see "[Configuration options for the dependabot.yml file](/github/administering-a-repository/configuration-options-for-dependency-updates)."
+Ao habilitar {% data variables.product.prodname_dependabot_version_updates %} para ações, você deve especificar valores para `package-ecosystem`, `directory` e `schedule.interval`. Há muitas propriedades opcionais adicionais que você pode definir para personalizar ainda mais suas atualizações de versão. Para obter mais informações, consulte "[Opções de configuração para o arquivo dependabot.yml](/github/administering-a-repository/configuration-options-for-dependency-updates)".
 
 ## Leia mais
 

@@ -77,7 +77,7 @@ topics:
 
 每个具有依赖项的应用程序都有一个依赖关系图，即应用程序直接或间接依赖的每个包版本的定向非循环图。 每次更新依赖项时，必须解决此图，否则将无法构建应用程序。 当生态系统具有深刻而复杂的依赖关系图（例如 npm 和 RubyGems）时，如果不升级整个生态系统，往往难以升级单个依赖项。
 
-避免这个问题的最佳办法是跟上最新发布的版本，例如启用版本更新。 这增加了通过不破坏依赖关系图的简单升级解决一个依赖项中的漏洞的可能性。 For more information, see "[Configuring {% data variables.product.prodname_dependabot %} version updates](/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/enabling-and-disabling-dependabot-version-updates)."
+避免这个问题的最佳办法是跟上最新发布的版本，例如启用版本更新。 这增加了通过不破坏依赖关系图的简单升级解决一个依赖项中的漏洞的可能性。 更多信息请参阅“[配置 {% data variables.product.prodname_dependabot %} 版本更新](/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/enabling-and-disabling-dependabot-version-updates)”。
 
 ### {% data variables.product.prodname_dependabot %} 无法更新到所需的版本，因为已经为最新版本打开了拉取请求
 
@@ -91,13 +91,13 @@ topics:
 
 此错误难以解决。 如果版本更新超时，您可以使用 `allow` 参数来指定更新最重要的依赖项，或者使用 `ignore` 参数从更新中排除某些依赖项。 更新配置可能使 {% data variables.product.prodname_dependabot %} 能够在规定时间内检查版本更新并生成请求。
 
-如果安全更新超时，您可以通过保持依赖项更新（例如，启用版本更新）来减少更新需要。 For more information, see "[Configuring {% data variables.product.prodname_dependabot %} version updates](/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/enabling-and-disabling-dependabot-version-updates)."
+如果安全更新超时，您可以通过保持依赖项更新（例如，启用版本更新）来减少更新需要。 更多信息请参阅“[配置 {% data variables.product.prodname_dependabot %} 版本更新](/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/enabling-and-disabling-dependabot-version-updates)”。
 
 ### {% data variables.product.prodname_dependabot %} 无法再打开拉取请求
 
 {% data variables.product.prodname_dependabot %} 生成的打开拉取请求数量存在限制。 如果达到此限制，将无法打开新的拉取请求，并报告此错误。 解决此错误的最佳方法是审查并合并一些打开的拉取请求。
 
-安全性和版本更新拉取请求有各自的限制，因此打开版本更新拉取请求不会阻止安全更新拉取请求的创建。 安全更新拉取请求的限制是 10。 默认情况下，版本更新的限制是 5，但您可以使用配置文件中的 `open-pull-requests-limit` 参数来更改它。 For more information, see "[Configuration options for the dependabot.yml file](/github/administering-a-repository/configuration-options-for-dependency-updates#open-pull-requests-limit)."
+安全性和版本更新拉取请求有各自的限制，因此打开版本更新拉取请求不会阻止安全更新拉取请求的创建。 安全更新拉取请求的限制是 10。 默认情况下，版本更新的限制是 5，但您可以使用配置文件中的 `open-pull-requests-limit` 参数来更改它。 更多信息请参阅“[dependabot.yml 文件的配置选项](/github/administering-a-repository/configuration-options-for-dependency-updates#open-pull-requests-limit)。”
 
 解决此错误的最佳方法是合并或关闭一些现有拉取请求，然后手动触发新的拉取请求。 更多信息请参阅“[手动触发 {% data variables.product.prodname_dependabot %} 拉取请求](#triggering-a-dependabot-pull-request-manually)”。
 
@@ -120,10 +120,10 @@ topics:
 
 如果取消阻止了 {% data variables.product.prodname_dependabot %}，您可以手动触发新的尝试来创建拉取请求。
 
-- **Security updates**—display the {% data variables.product.prodname_dependabot %} alert that shows the error you have fixed and click **Create {% data variables.product.prodname_dependabot %} security update**.
+- **安全更新**—显示 {% data variables.product.prodname_dependabot %} 警报，查看您修复的错误，然后单击 **Create {% data variables.product.prodname_dependabot %} security update（创建安全更新）**。
 - **版本更新**—在仓库的 **Insights（洞察）**选项卡上单击 **Dependency graph（依赖项图）**，然后单击 **Dependabot** 选项卡。 单击 **Last checked *TIME* ago**（上次检查时间以前），查看 {% data variables.product.prodname_dependabot %} 在上次检查版本更新时生成的日志文件。 单击 **Check for Updates（检查更新）**。
 
 ## 延伸阅读
 
-- "[Troubleshooting the dependency graph](/code-security/supply-chain-security/understanding-your-software-supply-chain/troubleshooting-the-dependency-graph)"
+- “[依赖关系图疑难解答](/code-security/supply-chain-security/understanding-your-software-supply-chain/troubleshooting-the-dependency-graph)”
 - "[漏洞依赖项检测疑难解答](/code-security/dependabot/working-with-dependabot/troubleshooting-the-detection-of-vulnerable-dependencies)"

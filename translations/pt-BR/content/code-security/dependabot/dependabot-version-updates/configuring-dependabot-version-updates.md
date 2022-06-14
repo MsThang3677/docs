@@ -1,5 +1,5 @@
 ---
-title: Configuring Dependabot version updates
+title: Configurando a versão das atualizações do Dependabot
 intro: 'Você pode configurar seu repositório para que o {% data variables.product.prodname_dependabot %} atualize automaticamente os pacotes que você usa.'
 permissions: 'People with write permissions to a repository can enable or disable {% data variables.product.prodname_dependabot_version_updates %} for the repository.'
 redirect_from:
@@ -18,7 +18,7 @@ topics:
   - Repositories
   - Dependencies
   - Pull requests
-shortTitle: Configure version updates
+shortTitle: Configurar atualizações da versão
 ---
 
 <!--Marketing-LINK: From /features/security/software-supply-chain page "About version updates for dependencies".-->
@@ -35,7 +35,16 @@ Você habilita {% data variables.product.prodname_dependabot_version_updates %},
 
 ## Habilitar {% data variables.product.prodname_dependabot_version_updates %}
 
-{% data reusables.dependabot.create-dependabot-yml %} For information, see "[Configuration options for the dependabot.yml file](/github/administering-a-repository/configuration-options-for-dependency-updates)."
+Você habilita {% data variables.product.prodname_dependabot_version_updates %} enviando um arquivo de configuração de *dependabot.yml* para o seu repositório.
+{% ifversion dependabot-settings-update-37 %}If you enable the feature in your settings page, GitHub creates a basic file which you can edit, otherwise you can create the file using any file editor.
+
+{% data reusables.repositories.navigate-to-repo %}
+{% data reusables.repositories.sidebar-settings %}
+{% data reusables.repositories.navigate-to-code-security-and-analysis %}
+1. Em "Código de segurança e análise", à direita de "{% data variables.product.prodname_dependabot_version_updates %}", clique em **Habilitar** para abrir um arquivo básico de configuração *dependabot.yml* no diretório do `.github` do seu repositório.
+{% else %}
+1. Crie um arquivo de configuração *dependabot.yml* no diretório `.github` do seu repositório.
+{% endif %}
 1. Adicione uma `versão`.
 1. Opcionalmente, se você tiver dependências em um registro privado, adicione uma seção de `registros` que contém detalhes de autenticação.
 1. Adicione uma seção de `atualizações` com uma entrada para cada gerenciador de pacotes que você deseja que {% data variables.product.prodname_dependabot %} monitore.
@@ -44,6 +53,8 @@ Você habilita {% data variables.product.prodname_dependabot_version_updates %},
     - `directory` para especificar o local do manifesto ou de outros arquivos de definição.
     - `schedule.interval` para especificar com que frequência verificar novas versões.
 {% data reusables.dependabot.check-in-dependabot-yml %}
+
+Para obter mais informações sobre as opções de configuração, consulte "[Opções de configuração para o arquivo dependabot.yml](/github/administering-a-repository/configuration-options-for-dependency-updates)".
 
 ### Exemplo: arquivo *dependabot.yml*
 
@@ -139,4 +150,4 @@ updates:
         update-types: ["version-update:semver-patch"]
 ```
 
-For more information about checking for existing ignore preferences, see "[Configuration options for the dependabot.yml file](/github/administering-a-repository/configuration-options-for-dependency-updates#ignore)."
+Para obter mais informações sobre a verificação de preferências de ignorados existentes, consulte "[Opções de configuração para o arquivo dependabot.yml](/github/administering-a-repository/configuration-options-for-dependency-updates#ignore)".

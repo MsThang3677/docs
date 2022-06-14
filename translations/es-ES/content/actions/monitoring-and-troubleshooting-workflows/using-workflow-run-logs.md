@@ -62,11 +62,11 @@ Puedes descargar los archivos de bitácora desde tu ejecución de flujo de traba
   ![Menú desplegable para descargar registros](/assets/images/help/repository/download-logs-drop-down-updated-2.png)
 
 
-  {% if re-run-jobs %}
+  {% ifversion re-run-jobs %}
 
   {% note %}
 
-  **Note**: When you download the log archive for a workflow that was partially re-run, the archive only includes the jobs that were re-run. To get a complete set of logs for jobs that were run from a workflow, you must download the log archives for the previous run attempts that ran the other jobs.
+  **Nota**: Cuando descargas el archivo de bitácora para un flujo de trabajo que se volvió a ejecutar parcialmente, este archivo solo incluirá los jobs que se volvieron a ejecutar. Para obtener un conjunto completo de bitácoras para los jobs que se ejecutaron desde un flujo de trabajo, debes descargar los archivos de bitácora de los intentos de ejecución previos que ejecutaron los otros jobs.
 
   {% endnote %}
 

@@ -37,7 +37,7 @@ As consultorias revisadas por {% data variables.product.company_short %} são vu
 
 Analisamos cuidadosamente cada consultoria com relação à sua validade. Cada consultoria revisada por {% data variables.product.company_short %} tem uma descrição completa e contém informações de pacote e ecossistema.
 
-Se você habilitar {% data variables.product.prodname_dependabot_alerts %} para os seus repositórios, você será notificado automaticamente quando uma nova consultoria revisada por {% data variables.product.company_short %} afetar pacotes dos quais você depende. For more information, see "[About {% data variables.product.prodname_dependabot_alerts %}](/code-security/supply-chain-security/about-alerts-for-vulnerable-dependencies)."
+Se você habilitar {% data variables.product.prodname_dependabot_alerts %} para os seus repositórios, você será notificado automaticamente quando uma nova consultoria revisada por {% data variables.product.company_short %} afetar pacotes dos quais você depende. Para obter mais informações, consulte "[Sobre {% data variables.product.prodname_dependabot_alerts %}](/code-security/supply-chain-security/about-alerts-for-vulnerable-dependencies)".
 
 ### Sobre consultorias não revisadas
 
@@ -113,9 +113,9 @@ Para qualquer consultoria revisada por {% data variables.product.company_short %
 1. Navegue até https://github.com/advisories.
 2. Clique em uma consultoria.
 3. Na parte superior da página da consultoria, clique em **Alertas do dependabot**. ![Alertas do Dependabot](/assets/images/help/security/advisory-database-dependabot-alerts.png)
-4. Opcionalmente, para filtrar a lista, use a barra de pesquisa ou os menus suspensos. The "Organization" drop-down menu allows you to filter the {% data variables.product.prodname_dependabot_alerts %} per owner (organization or user). ![Barra de pesquisa e menus suspensos para filtrar alertas](/assets/images/help/security/advisory-database-dependabot-alerts-filters.png)
-5. For more details about the vulnerability, and for advice on how to fix the vulnerable repository, click the repository name.
+4. Opcionalmente, para filtrar a lista, use a barra de pesquisa ou os menus suspensos. O menu suspenso "Organização" permite filtrar {% data variables.product.prodname_dependabot_alerts %} por proprietário (organização ou usuário). ![Barra de pesquisa e menus suspensos para filtrar alertas](/assets/images/help/security/advisory-database-dependabot-alerts-filters.png)
+5. Para mais detalhes sobre a vulnerabilidade e para aconselhamento sobre como corrigir o repositório vulnerável clique no nome do repositório.
 
 ## Leia mais
 
-- MITRE's [definition of "vulnerability"](https://www.cve.org/ResourcesSupport/Glossary#vulnerability)
+- [Definição de "vulnerabilidade"](https://www.cve.org/ResourcesSupport/Glossary#vulnerability) da MITRE
